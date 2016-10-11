@@ -182,7 +182,7 @@ var sayHi = createGreeting('Hi');
 sayHi('Bob');
 
 var sayHello = createGreeting('Hello');
-sayHello('Anna');
+sayHello('Anna');  
 
 
 
