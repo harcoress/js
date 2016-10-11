@@ -149,23 +149,40 @@ var res = str.split(' ');
 console.log(res);*/
 
 
-function str(a){
+/*function str(a){
     return str.split()
 }
 str(i wanna rock);
-console.log(str)
+console.log(str)*/
+
+/*function idGenerator() {
+  
+    return function() {
+        return id++;
+    }
+}
+
+var nextId = idGenerator();
 
 
+console.log( nextId() );
+console.log( nextId() );
+console.log( nextId() );
+console.log( nextId() );
+console.log( nextId() );*/
+
+function createGreeting(greeteng) {
+    return function(name) {
+        console.log(`${greeteng}, ${name}`);
+    }
+}
 
 
+var sayHi = createGreeting('Hi');
+sayHi('Bob');
 
-
-
-
-
-
-
-
+var sayHello = createGreeting('Hello');
+sayHello('Anna');
 
 
 
