@@ -197,7 +197,7 @@ function greet(friend) {
 }
 
 greetFriends(allFriends, greet);*/
-function genericPoemMaker(name, gender) {
+/*function genericPoemMaker(name, gender) {
     console.log(name + " is finer than fine wine.");
     console.log("Altruistic and noble for the modern time");
     console.log("Always admirably adorned with the latest style.");
@@ -209,4 +209,30 @@ function getUserInput(firstName, lastName, gender, callback) {
     callback(name, gender);
 }
 
-getUserInput('vasya', 'vetrov', '15', genericPoemMaker);
+getUserInput('vasya', 'vetrov', '15', genericPoemMaker);*/
+
+//var arr = [1,22,-33,43,65,-87,-75];
+
+//arr.forEach(function(elem, i, arr) {
+//    console.log(`there's ${elem} on the ${i} position`);
+//    console.log(arr);
+//});
+            
+           
+//var newarray = arr.filter(function(elem){
+    //return elem < 0;
+//})
+
+
+//console.log(newarray);
+
+
+
+var arr = [1,4,5,9,55,64,81,99];
+
+    var newArray = arr.filter(function(elem){
+        return Math.sqrt(elem) == Math.ceil(Math.sqrt(elem));
+    })
+
+
+console.log(newArray);
