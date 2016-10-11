@@ -171,7 +171,7 @@ console.log( nextId() );
 console.log( nextId() );
 console.log( nextId() );*/
 
-function createGreeting(greeteng) {
+/*function createGreeting(greeteng) {
     return function(name) {
         console.log(`${greeteng}, ${name}`);
     }
@@ -182,8 +182,31 @@ var sayHi = createGreeting('Hi');
 sayHi('Bob');
 
 var sayHello = createGreeting('Hello');
-sayHello('Anna');  
+sayHello('Anna');*/
 
+/*var allFriends = ["Bob", "Rick", "John"];
 
+function greetFriends(friends, greetFunc) {
+    for(var i = 0; i<friends.length; i++) {
+       greetFunc(friends[i]);
+    }
+}
 
+function greet(friend) {
+    console.log('Hello, ' + friend);
+}
 
+greetFriends(allFriends, greet);*/
+function genericPoemMaker(name, gender) {
+    console.log(name + " is finer than fine wine.");
+    console.log("Altruistic and noble for the modern time");
+    console.log("Always admirably adorned with the latest style.");
+    console.log("A " + gender + " of unfortunate tragedies who still manages a perpetual smile");
+}
+
+function getUserInput(firstName, lastName, gender, callback) {
+    var name = `${firstName} ${lastName}`;
+    callback(name, gender);
+}
+
+getUserInput('vasya', 'vetrov', '15', genericPoemMaker);
